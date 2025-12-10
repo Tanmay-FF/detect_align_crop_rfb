@@ -71,7 +71,8 @@ python detect_align_crop.py \
 | :--- | :--- | :--- |
 | **Inference Engine** | ONNX Runtime | Decoupled from Caffe/TF for portability. |
 | **Total Weight** | \~4.9 MB | Extremely lightweight; suitable for IoT/Edge. |
-| **Detector Input** | Dynamic/360x480 | Resolution agnostic (depending on export). |
+| **Detector Input** | 360x480 | Resolution agnostic (depending on export). |
+| **Landmark Input** | 64x64 | Needs resizing. |
 | **Alignment Topology**| 3-Point | **[Inner-Eyes, Bottom-Lip]** configuration. |
 
 -----
@@ -83,4 +84,3 @@ python detect_align_crop.py \
 
 -----
 
-### Would you like me to restructure `detect_align_crop.py` to support multi-threading as suggested in the Deployment Notes?
